@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
     @GetMapping()
     public String home() {
-                return "write down your name and last name in the path like this: PATH/name/lastname";
+                return "write down your name and last name in the path like this: PATH/welcometomypage/name/lastname";
     }
 
     @GetMapping("/spring")
