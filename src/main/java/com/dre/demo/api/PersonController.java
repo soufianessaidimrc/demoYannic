@@ -24,7 +24,7 @@ public class PersonController {
     }
     @GetMapping(path = "/spring/{name}/{sname}")
     public String message(@PathVariable("name") String name,@PathVariable("sname") String sname) {
-        return "welcome : "+name+" "+sname;
+        return "welcome : "+name+" "+sname+"<br/> you can go back for more infos on spring on: <br/><b>THISPATH/spring</b>";
     }
     
 }
