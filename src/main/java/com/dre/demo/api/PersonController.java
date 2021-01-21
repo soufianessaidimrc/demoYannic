@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
     @GetMapping()
     public String home() {
-                return "this is home page";
+                return "write down your name and last name in the path like this: PATH/name/lastname";
     }
 
     @GetMapping("/spring")
     public String test() {
         return "Heloo World from Spring";
     }
-    @GetMapping(path = "/bonjour/{name}")
-    public String message(@PathVariable("name") String name) {
-        return "Bonjour : "+name;
+    @GetMapping(path = "/welcometomypage/{name}/{sname}")
+    public String message(@PathVariable("name") String name,@PathVariable("sname") String sname) {
+        return "welcome : "+name+" "+sname;
     }
     
 }
