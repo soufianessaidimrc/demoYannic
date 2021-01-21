@@ -20,9 +20,9 @@ public class PersonController {
     public String test() {
         return "En informatique, Spring est un framework open source pour construire et définir l'infrastructure d'une application Java3, dont il facilite le développement et les tests.\n<br/>"
         		+"En 2004, Rod Johnson a écrit le livre Expert One-on-One J2EE Design and Development4 qui explique les raisons de la création de Spring.<br/>"
-        		+ "write down your name and last name in the path like this: <b>THISPATH/welcometomypage/name/lastname</b>";
+        		+ "write down your name and last name in the path like this: <b>THISPATH/name/lastname</b>";
     }
-    @GetMapping(path = "/welcometomypage/{name}/{sname}")
+    @GetMapping(path = "/spring/{name}/{sname}")
     public String message(@PathVariable("name") String name,@PathVariable("sname") String sname) {
         return "welcome : "+name+" "+sname;
     }
